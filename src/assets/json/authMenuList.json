@@ -1,0 +1,877 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/home/index",
+      "name": "home",
+      "component": "/demo/home/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "首页",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/dataScreen",
+      "name": "dataScreen",
+      "component": "/demo/dataScreen/index",
+      "meta": {
+        "icon": "Histogram",
+        "title": "数据大屏",
+        "isLink": "",
+        "isHide": false,
+        "isFull": true,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/proTable",
+      "name": "proTable",
+      "redirect": "/proTable/useProTable",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "超级表格",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/proTable/useProTable",
+          "name": "useProTable",
+          "component": "/demo/proTable/useProTable/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "使用 ProTable",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/proTable/useProTable/detail/:id",
+              "name": "useProTableDetail",
+              "component": "/demo/proTable/useProTable/detail",
+              "meta": {
+                "icon": "Menu",
+                "title": "ProTable 详情",
+                "activeMenu": "/proTable/useProTable",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/proTable/useTreeFilter",
+          "name": "useTreeFilter",
+          "component": "/demo/proTable/useTreeFilter/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "使用 TreeFilter",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/proTable/useTreeFilter/detail/:id",
+          "name": "useTreeFilterDetail",
+          "component": "/demo/proTable/useTreeFilter/detail",
+          "meta": {
+            "icon": "Menu",
+            "title": "TreeFilter 详情",
+            "activeMenu": "/proTable/useTreeFilter",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/proTable/useSelectFilter",
+          "name": "useSelectFilter",
+          "component": "/demo/proTable/useSelectFilter/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "使用 SelectFilter",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/proTable/treeProTable",
+          "name": "treeProTable",
+          "component": "/demo/proTable/treeProTable/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "树形 ProTable",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/proTable/complexProTable",
+          "name": "complexProTable",
+          "component": "/demo/proTable/complexProTable/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "复杂 ProTable",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/proTable/document",
+          "name": "proTableDocument",
+          "component": "/demo/proTable/document/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "ProTable 文档",
+            "isLink": "https://juejin.cn/post/7166068828202336263/#heading-14",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/auth",
+      "name": "auth",
+      "redirect": "/auth/menu",
+      "meta": {
+        "icon": "Lock",
+        "title": "权限管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/auth/menu",
+          "name": "authMenu",
+          "component": "/demo/auth/menu/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "菜单权限",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/auth/button",
+          "name": "authButton",
+          "component": "/demo/auth/button/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "按钮权限",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/assembly",
+      "name": "assembly",
+      "redirect": "/assembly/tabs",
+      "meta": {
+        "icon": "Briefcase",
+        "title": "常用组件",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/assembly/tabs",
+          "name": "tabs",
+          "component": "/demo/assembly/tabs/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "标签页操作",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/assembly/tabs/detail/:id",
+              "name": "tabsDetail",
+              "component": "/demo/assembly/tabs/detail",
+              "meta": {
+                "icon": "Menu",
+                "title": "Tab 详情",
+                "activeMenu": "/assembly/tabs",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assembly/selectIcon",
+          "name": "selectIcon",
+          "component": "/demo/assembly/selectIcon/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "图标选择器",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/selectFilter",
+          "name": "selectFilter",
+          "component": "/demo/assembly/selectFilter/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "分类筛选器",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/treeFilter",
+          "name": "treeFilter",
+          "component": "/demo/assembly/treeFilter/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "树形筛选器",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/svgIcon",
+          "name": "svgIcon",
+          "component": "/demo/assembly/svgIcon/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "SVG 图标",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/uploadFile",
+          "name": "uploadFile",
+          "component": "/demo/assembly/uploadFile/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "文件上传",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/batchImport",
+          "name": "batchImport",
+          "component": "/demo/assembly/batchImport/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "批量添加数据",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/wangEditor",
+          "name": "wangEditor",
+          "component": "/demo/assembly/wangEditor/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "富文本编辑器",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/assembly/draggable",
+          "name": "draggable",
+          "component": "/demo/assembly/draggable/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "拖拽组件",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "name": "dashboard",
+      "redirect": "/dashboard/dataVisualize",
+      "meta": {
+        "icon": "Odometer",
+        "title": "Dashboard",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/dashboard/dataVisualize",
+          "name": "dataVisualize",
+          "component": "/demo/dashboard/dataVisualize/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "数据可视化",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/form",
+      "name": "form",
+      "redirect": "/form/proForm",
+      "meta": {
+        "icon": "Tickets",
+        "title": "表单 Form",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/form/proForm",
+          "name": "proForm",
+          "component": "/demo/form/proForm/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "超级 Form",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/form/basicForm",
+          "name": "basicForm",
+          "component": "/demo/form/basicForm/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "基础 Form",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/form/validateForm",
+          "name": "validateForm",
+          "component": "/demo/form/validateForm/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "校验 Form",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/form/dynamicForm",
+          "name": "dynamicForm",
+          "component": "/demo/form/dynamicForm/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "动态 Form",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/echarts",
+      "name": "echarts",
+      "redirect": "/echarts/waterChart",
+      "meta": {
+        "icon": "TrendCharts",
+        "title": "ECharts",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/echarts/waterChart",
+          "name": "waterChart",
+          "component": "/demo/echarts/waterChart/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "水型图",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/echarts/columnChart",
+          "name": "columnChart",
+          "component": "/demo/echarts/columnChart/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "柱状图",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/echarts/lineChart",
+          "name": "lineChart",
+          "component": "/demo/echarts/lineChart/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "折线图",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/echarts/pieChart",
+          "name": "pieChart",
+          "component": "/demo/echarts/pieChart/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "饼图",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/echarts/radarChart",
+          "name": "radarChart",
+          "component": "/demo/echarts/radarChart/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "雷达图",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/echarts/nestedChart",
+          "name": "nestedChart",
+          "component": "/demo/echarts/nestedChart/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "嵌套环形图",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/directives",
+      "name": "directives",
+      "redirect": "/directives/copyDirect",
+      "meta": {
+        "icon": "Stamp",
+        "title": "自定义指令",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/directives/copyDirect",
+          "name": "copyDirect",
+          "component": "/demo/directives/copyDirect/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "复制指令",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/directives/watermarkDirect",
+          "name": "watermarkDirect",
+          "component": "/demo/directives/watermarkDirect/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "水印指令",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/directives/dragDirect",
+          "name": "dragDirect",
+          "component": "/demo/directives/dragDirect/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "拖拽指令",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/directives/debounceDirect",
+          "name": "debounceDirect",
+          "component": "/demo/directives/debounceDirect/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "防抖指令",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/directives/throttleDirect",
+          "name": "throttleDirect",
+          "component": "/demo/directives/throttleDirect/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "节流指令",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/directives/longpressDirect",
+          "name": "longpressDirect",
+          "component": "/demo/directives/longpressDirect/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "长按指令",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/menu",
+      "name": "menu",
+      "redirect": "/menu/menu1",
+      "meta": {
+        "icon": "List",
+        "title": "菜单嵌套",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/menu/menu1",
+          "name": "menu1",
+          "component": "/demo/menu/menu1/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "菜单1",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/menu/menu2",
+          "name": "menu2",
+          "redirect": "/menu/menu2/menu21",
+          "meta": {
+            "icon": "Menu",
+            "title": "菜单2",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/menu/menu2/menu21",
+              "name": "menu21",
+              "component": "/demo/menu/menu2/menu21/index",
+              "meta": {
+                "icon": "Menu",
+                "title": "菜单2-1",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/menu/menu2/menu22",
+              "name": "menu22",
+              "redirect": "/menu/menu2/menu22/menu221",
+              "meta": {
+                "icon": "Menu",
+                "title": "菜单2-2",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              },
+              "children": [
+                {
+                  "path": "/menu/menu2/menu22/menu221",
+                  "name": "menu221",
+                  "component": "/demo/menu/menu2/menu22/menu221/index",
+                  "meta": {
+                    "icon": "Menu",
+                    "title": "菜单2-2-1",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                },
+                {
+                  "path": "/menu/menu2/menu22/menu222",
+                  "name": "menu222",
+                  "component": "/demo/menu/menu2/menu22/menu222/index",
+                  "meta": {
+                    "icon": "Menu",
+                    "title": "菜单2-2-2",
+                    "isLink": "",
+                    "isHide": false,
+                    "isFull": false,
+                    "isAffix": false,
+                    "isKeepAlive": true
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/menu/menu2/menu23",
+              "name": "menu23",
+              "component": "/demo/menu/menu2/menu23/index",
+              "meta": {
+                "icon": "Menu",
+                "title": "菜单2-3",
+                "isLink": "",
+                "isHide": false,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/menu/menu3",
+          "name": "menu3",
+          "component": "/demo/menu/menu3/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "菜单3",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/system",
+      "name": "system",
+      "redirect": "/system/accountManage",
+      "meta": {
+        "icon": "Tools",
+        "title": "系统管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/system/menuMange",
+          "name": "menuMange",
+          "component": "/demo/system/menuMange/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "菜单管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/link",
+      "name": "link",
+      "redirect": "/link/bing",
+      "meta": {
+        "icon": "Paperclip",
+        "title": "外部链接",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/link/bing",
+          "name": "bing",
+          "component": "/demo/link/bing/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "Bing 内嵌",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/about/index",
+      "name": "about",
+      "component": "/demo/about/index",
+      "meta": {
+        "icon": "InfoFilled",
+        "title": "关于项目",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ],
+  "msg": "成功"
+}

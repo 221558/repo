@@ -1,0 +1,1024 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/businessTopology",
+      "name": "home",
+      "redirect": "/businessTopology/topology",
+      "meta": {
+        "icon": "House",
+        "title": "业务拓扑",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["adminuser", "audit", "system"]
+      },
+      "children": [
+        {
+          "path": "/businessTopology/topology",
+          "name": "topology",
+          "component": "/businessTopology/topology-v2/index",
+          "meta": {
+            "icon": "",
+            "title": "业务可视化",
+            "pageTitle": "业务可视化",
+            "pageDescription": "查看业务流量可视化",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["adminuser", "audit", "system"]
+          }
+        },
+        {
+          "path": "/businessTopology/trafficMonitoring",
+          "name": "trafficMonitoring",
+          "component": "/businessTopology/trafficMonitoring/index",
+          "meta": {
+            "icon": "",
+            "title": "连接分析",
+            "pageTitle": "连接分析",
+            "pageDescription": "查看连接分析",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["adminuser", "audit", "system"]
+          },
+          "children": [
+            {
+              "path": "/businessTopology/trafficMonitoring/policy",
+              "name": "trafficPolicy",
+              "component": "/businessTopology/trafficMonitoring/policy",
+              "meta": {
+                "icon": "",
+                "title": "匹配策略",
+                "pageTitle": "连接分析",
+                "pageDescription": "查看连接分析",
+                "activeMenu": "/businessTopology/trafficMonitoring",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["adminuser", "audit", "system"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/assetManagement",
+      "name": "assetManagement",
+      "redirect": "/assetManagement/managerTool",
+      "meta": {
+        "icon": "Files",
+        "title": "资产管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["system"]
+      },
+      "children": [
+        {
+          "path": "/assetManagement/managerTool",
+          "name": "managerTool",
+          "component": "/assetManagement/managerTool/index",
+          "meta": {
+            "icon": "",
+            "title": "安装工具",
+            "pageTitle": "安装工具",
+            "pageDescription": "安装探针方式说明",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/assetManagement/managerTool/proxy",
+              "name": "proxy",
+              "component": "/assetManagement/managerTool/proxy",
+              "meta": {
+                "icon": "",
+                "title": "代理下载",
+                "pageTitle": "安装工具",
+                "pageDescription": "安装探针方式说明",
+                "activeMenu": "/assetManagement/managerTool",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/managerTool/arrange",
+              "name": "arrange",
+              "component": "/assetManagement/managerTool/arrange",
+              "meta": {
+                "icon": "",
+                "title": "批量部署",
+                "pageTitle": "安装工具",
+                "pageDescription": "安装探针方式说明",
+                "activeMenu": "/assetManagement/managerTool",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/managerTool/service",
+              "name": "managerToolService",
+              "component": "/assetManagement/managerTool/service",
+              "meta": {
+                "icon": "",
+                "title": "部署任务",
+                "pageTitle": "安装工具",
+                "pageDescription": "安装探针方式说明",
+                "activeMenu": "/assetManagement/managerTool",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/managerTool/taskInfo",
+              "name": "taskInfo",
+              "component": "/assetManagement/managerTool/taskInfo",
+              "meta": {
+                "icon": "",
+                "title": "任务详情",
+                "pageTitle": "安装工具",
+                "pageDescription": "安装探针方式说明",
+                "activeMenu": "/assetManagement/managerTool",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/managerTool/statusInfo",
+              "name": "statusInfo",
+              "component": "/assetManagement/managerTool/statusInfo",
+              "meta": {
+                "icon": "",
+                "title": "任务运行日志",
+                "pageTitle": "安装工具",
+                "pageDescription": "安装探针方式说明",
+                "activeMenu": "/assetManagement/managerTool",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assetManagement/agent",
+          "name": "agent",
+          "component": "/assetManagement/agent/index",
+          "meta": {
+            "icon": "",
+            "title": "工作负载管理",
+            "pageTitle": "工作负载管理",
+            "pageDescription": "管理工作负载",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/assetManagement/agent/detail",
+              "name": "agentDetail",
+              "component": "/assetManagement/agent/detail",
+              "meta": {
+                "icon": "",
+                "title": "工作负载详情",
+                "pageTitle": "工作负载管理",
+                "pageDescription": "管理工作负载",
+                "activeMenu": "/assetManagement/agent",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assetManagement/group",
+          "name": "group",
+          "component": "/assetManagement/group/index",
+          "meta": {
+            "icon": "",
+            "title": "工作组管理",
+            "pageTitle": "工作组管理",
+            "pageDescription": "管理工作组列表",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/assetManagement/group/add",
+              "name": "addGroup",
+              "component": "/assetManagement/group/form",
+              "meta": {
+                "icon": "",
+                "title": "新增工作组",
+                "pageTitle": "工作组管理",
+                "pageDescription": "管理工作组列表",
+                "activeMenu": "/assetManagement/group",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/group/edit/:id",
+              "name": "editGroup",
+              "component": "/assetManagement/group/form",
+              "meta": {
+                "icon": "",
+                "title": "编辑工作组",
+                "pageTitle": "工作组管理",
+                "pageDescription": "管理工作组列表",
+                "activeMenu": "/assetManagement/group",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/group/policy/:id",
+              "name": "groupPolicy",
+              "component": "/assetManagement/group/policy",
+              "meta": {
+                "icon": "",
+                "title": "分组策略",
+                "pageTitle": "工作组管理",
+                "pageDescription": "管理工作组列表",
+                "activeMenu": "/assetManagement/group",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/group/agents/:id",
+              "name": "agentsList",
+              "component": "/assetManagement/group/agentsList",
+              "meta": {
+                "icon": "",
+                "title": "分组下代理",
+                "pageTitle": "工作组管理",
+                "pageDescription": "管理工作组列表",
+                "activeMenu": "/assetManagement/group",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/assetManagement/group/agentsManage/:id",
+              "name": "agentsManage",
+              "component": "/assetManagement/group/agentsManage",
+              "meta": {
+                "icon": "",
+                "title": "管理分组下代理",
+                "pageTitle": "工作组管理",
+                "pageDescription": "管理工作组列表",
+                "activeMenu": "/assetManagement/group",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/assetManagement/label",
+          "name": "label",
+          "component": "/assetManagement/label/index",
+          "meta": {
+            "icon": "",
+            "title": "标签管理",
+            "pageTitle": "标签管理",
+            "pageDescription": "管理标签列表",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          }
+        }
+      ]
+    },
+    {
+      "path": "/securityPolicy",
+      "name": "securityPolicy",
+      "redirect": "/securityPolicy/policyManage",
+      "meta": {
+        "icon": "Collection",
+        "title": "安全策略",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["system"]
+      },
+      "children": [
+        {
+          "path": "/securityPolicy/policyManage",
+          "name": "policyManage",
+          "component": "/securityPolicy/policyManage/index",
+          "meta": {
+            "icon": "",
+            "title": "策略管理",
+            "pageTitle": "策略管理",
+            "pageDescription": "策略管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/securityPolicy/policyManage/add",
+              "name": "addPolicy",
+              "component": "/securityPolicy/policyManage/form",
+              "meta": {
+                "icon": "",
+                "title": "新增策略",
+                "pageTitle": "策略管理",
+                "pageDescription": "策略管理",
+                "activeMenu": "/securityPolicy/policyManage",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/securityPolicy/policyManage/edit/:id",
+              "name": "editPolicyManage",
+              "component": "/securityPolicy/policyManage/form",
+              "meta": {
+                "icon": "",
+                "title": "编辑策略",
+                "pageTitle": "策略管理",
+                "pageDescription": "策略管理",
+                "activeMenu": "/securityPolicy/policyManage",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/securityPolicy/policyManage/ruleManage/:id",
+              "name": "policyRuleManage",
+              "component": "/securityPolicy/policyManage/ruleManage",
+              "meta": {
+                "icon": "",
+                "title": "编辑规则",
+                "pageTitle": "策略管理",
+                "pageDescription": "策略管理",
+                "activeMenu": "/securityPolicy/policyManage",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/securityPolicy/policyGenerator",
+          "name": "policyGenerator",
+          "component": "/securityPolicy/policyGenerator/index",
+          "meta": {
+            "icon": "",
+            "title": "策略生成器",
+            "pageTitle": "策略生成器",
+            "pageDescription": "快速生成策略规则",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          }
+        },
+        {
+          "path": "/securityPolicy/service",
+          "name": "service",
+          "component": "/securityPolicy/service/index",
+          "meta": {
+            "icon": "",
+            "title": "服务对象管理",
+            "pageTitle": "服务对象管理",
+            "pageDescription": "管理服务对象列表",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/securityPolicy/service/add",
+              "name": "addService",
+              "component": "/securityPolicy/service/form",
+              "meta": {
+                "icon": "",
+                "title": "新增服务对象",
+                "pageTitle": "服务对象管理",
+                "pageDescription": "管理服务对象列表",
+                "activeMenu": "/securityPolicy/service",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/securityPolicy/service/edit/:id",
+              "name": "editService",
+              "component": "/securityPolicy/service/form",
+              "meta": {
+                "icon": "",
+                "title": "编辑服务对象",
+                "pageTitle": "服务对象管理",
+                "pageDescription": "管理服务对象列表",
+                "activeMenu": "/securityPolicy/service",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/securityPolicy/address",
+          "name": "address",
+          "component": "/securityPolicy/address/index",
+          "meta": {
+            "icon": "",
+            "title": "地址对象管理",
+            "pageTitle": "地址对象管理",
+            "pageDescription": "管理地址对象列表",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/securityPolicy/address/add",
+              "name": "addAddress",
+              "component": "/securityPolicy/address/form",
+              "meta": {
+                "icon": "",
+                "title": "新增地址对象",
+                "pageTitle": "地址对象管理",
+                "pageDescription": "管理地址对象列表",
+                "activeMenu": "/securityPolicy/address",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            },
+            {
+              "path": "/securityPolicy/address/edit/:id",
+              "name": "editAddress",
+              "component": "/securityPolicy/address/form",
+              "meta": {
+                "icon": "",
+                "title": "编辑地址对象管理",
+                "pageTitle": "地址对象管理",
+                "pageDescription": "管理地址对象列表",
+                "activeMenu": "/securityPolicy/address",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/alarmCenter",
+      "name": "alarmCenter",
+      "redirect": "/alarmCenter/alarmManage",
+      "meta": {
+        "icon": "Odometer",
+        "title": "告警中心",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["audit"]
+      },
+      "children": [
+        {
+          "path": "/alarmCenter/alarmManage",
+          "name": "alarmManage",
+          "component": "/alarmCenter/alarmManage/index",
+          "meta": {
+            "icon": "",
+            "title": "告警管理",
+            "pageTitle": "告警管理",
+            "pageDescription": "查看告警管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["audit"]
+          }
+        },
+        {
+          "path": "/alarmCenter/alarmPolicy",
+          "name": "alarmPolicy",
+          "component": "/alarmCenter/alarmPolicy/index",
+          "meta": {
+            "icon": "",
+            "title": "告警策略",
+            "pageTitle": "告警策略",
+            "pageDescription": "查看告警策略",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["audit"]
+          },
+          "children": [
+            {
+              "path": "/alarmCenter/alarmPolicy/add",
+              "name": "addAlarmPolicy",
+              "component": "/alarmCenter/alarmPolicy/form",
+              "meta": {
+                "icon": "",
+                "title": "新增告警策略",
+                "pageTitle": "告警策略",
+                "pageDescription": "查看告警策略",
+                "activeMenu": "/alarmCenter/alarmPolicy",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["audit"]
+              }
+            },
+            {
+              "path": "/alarmCenter/alarmPolicy/edit/:id",
+              "name": "editAlarmPolicy",
+              "component": "/alarmCenter/alarmPolicy/form",
+              "meta": {
+                "icon": "",
+                "title": "编辑告警策略",
+                "pageTitle": "告警策略",
+                "pageDescription": "查看告警策略",
+                "activeMenu": "/alarmCenter/alarmPolicy",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["audit"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/messageCenter",
+      "name": "messageCenter",
+      "component": "/alarmCenter/messageCenter/index",
+      "meta": {
+        "icon": "",
+        "title": "通知中心",
+        "pageTitle": "通知中心",
+        "pageDescription": "查看通知中心",
+        "isLink": "",
+        "isHide": true,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["audit"]
+      }
+    },
+    {
+      "path": "/logCenter",
+      "name": "logCenter",
+      "redirect": "/logCenter/loginLog",
+      "meta": {
+        "icon": "DataAnalysis",
+        "title": "日志中心",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["audit"]
+      },
+      "children": [
+        {
+          "path": "/logCenter/loginLog",
+          "name": "loginLog",
+          "component": "/logCenter/loginLog/index",
+          "meta": {
+            "icon": "",
+            "title": "登录日志",
+            "pageTitle": "登录日志",
+            "pageDescription": "查看登录日志",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["audit"]
+          }
+        },
+        {
+          "path": "/logCenter/operationLog",
+          "name": "operationLog",
+          "component": "/logCenter/operationLog/index",
+          "meta": {
+            "icon": "",
+            "title": "操作日志",
+            "pageTitle": "操作日志",
+            "pageDescription": "查看操作日志",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["audit"]
+          }
+        },
+        {
+          "path": "/logCenter/systemLog",
+          "name": "systemLog",
+          "component": "/logCenter/systemLog/index",
+          "meta": {
+            "icon": "",
+            "title": "系统日志",
+            "pageTitle": "系统日志",
+            "pageDescription": "查看系统日志",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["audit"]
+          }
+        }
+      ]
+    },
+    {
+      "path": "/system",
+      "name": "system",
+      "redirect": "/system/license",
+      "meta": {
+        "icon": "Setting",
+        "title": "系统管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["adminuser", "system"]
+      },
+      "children": [
+        {
+          "path": "/system/license",
+          "name": "license",
+          "component": "/system/license/index",
+          "meta": {
+            "icon": "",
+            "title": "授权管理",
+            "pageTitle": "授权管理",
+            "pageDescription": "授权管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": []
+          }
+        },
+        {
+          "path": "/system/user",
+          "name": "user",
+          "component": "/system/user/index",
+          "meta": {
+            "icon": "",
+            "title": "用户管理",
+            "pageTitle": "用户管理",
+            "pageDescription": "查看用户管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["adminuser"]
+          },
+          "children": [
+            {
+              "path": "/system/user/add",
+              "name": "addUser",
+              "component": "/system/user/form",
+              "meta": {
+                "icon": "",
+                "title": "新增用户",
+                "pageTitle": "用户管理",
+                "pageDescription": "查看用户管理",
+                "activeMenu": "/system/user",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["adminuser"]
+              }
+            },
+            {
+              "path": "/system/user/edit/:id",
+              "name": "editUser",
+              "component": "/system/user/form",
+              "meta": {
+                "icon": "",
+                "title": "编辑用户",
+                "pageTitle": "用户管理",
+                "pageDescription": "查看用户管理",
+                "activeMenu": "/system/user",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["adminuser"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/system/systemParam",
+          "name": "systemParam",
+          "component": "/system/systemParam/index",
+          "meta": {
+            "icon": "",
+            "title": "系统配置",
+            "pageTitle": "系统配置",
+            "pageDescription": "系统配置",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          }
+        },
+        {
+          "path": "/system/systemStatus",
+          "name": "systemStatus",
+          "component": "/system/systemStatus/index",
+          "meta": {
+            "icon": "",
+            "title": "系统监控",
+            "pageTitle": "系统监控",
+            "pageDescription": "查看系统资源使用情况",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          }
+        }
+      ]
+    },
+    {
+      "path": "/taskCenter",
+      "name": "taskCenter",
+      "meta": {
+        "icon": "",
+        "title": "我的任务",
+        "isLink": "",
+        "isHide": true,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["audit", "system"]
+      },
+      "children": [
+        {
+          "path": "/taskCenter/submit",
+          "name": "submit",
+          "component": "/taskCenter/submit/index",
+          "meta": {
+            "icon": "",
+            "title": "已提交",
+            "pageTitle": "已提交",
+            "pageDescription": "查看已提交的任务",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["audit", "system"]
+          },
+          "children": [
+            {
+              "path": "/taskCenter/submit/detail",
+              "name": "submitDetail",
+              "component": "/taskCenter/submit/detail",
+              "meta": {
+                "icon": "",
+                "title": "任务详情",
+                "pageTitle": "已提交",
+                "pageDescription": "查看已提交的任务",
+                "activeMenu": "",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["audit", "system"]
+              }
+            }
+          ]
+        },
+        {
+          "path": "/taskCenter/receive",
+          "name": "receive",
+          "component": "/taskCenter/receive/index",
+          "meta": {
+            "icon": "",
+            "title": "已收到",
+            "pageTitle": "已收到",
+            "pageDescription": "查看已收到的任务",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["system"]
+          },
+          "children": [
+            {
+              "path": "/taskCenter/receive/detail",
+              "name": "receiveDetail",
+              "component": "/taskCenter/receive/detail",
+              "meta": {
+                "icon": "",
+                "title": "任务详情",
+                "pageTitle": "已收到",
+                "pageDescription": "查看已收到的任务",
+                "activeMenu": "",
+                "isLink": "",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "rolePermission": ["system"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contactManagement",
+      "name": "contactManagement",
+      "component": "/contactManagement/index",
+      "meta": {
+        "icon": "",
+        "title": "联系人管理",
+        "pageTitle": "联系人管理",
+        "pageDescription": "查看联系人管理",
+        "isLink": "",
+        "isHide": true,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": false,
+        "rolePermission": ["adminuser", "audit", "system"]
+      },
+      "children": [
+        {
+          "path": "/contactManagement/add",
+          "name": "addContactManagement",
+          "component": "/contactManagement/form",
+          "meta": {
+            "icon": "",
+            "title": "新增联系人",
+            "pageTitle": "联系人管理",
+            "pageDescription": "查看联系人管理",
+            "activeMenu": "/contactManagement",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["adminuser", "audit", "system"]
+          }
+        },
+        {
+          "path": "/contactManagement/edit/:id",
+          "name": "editContactManagement",
+          "component": "/contactManagement/form",
+          "meta": {
+            "icon": "",
+            "title": "编辑联系人",
+            "pageTitle": "联系人管理",
+            "pageDescription": "查看联系人管理",
+            "activeMenu": "/contactManagement",
+            "isLink": "",
+            "isHide": true,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": false,
+            "rolePermission": ["adminuser", "audit", "system"]
+          }
+        }
+      ]
+    }
+  ]
+}
